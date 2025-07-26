@@ -16,6 +16,7 @@
 		B5C2F11D2DE16DE300866644 /* BMICaculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2F11C2DE16DE300866644 /* BMICaculatorTests.swift */; };
 		B5C2F1272DE16DE300866644 /* BMICaculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2F1262DE16DE300866644 /* BMICaculatorUITests.swift */; };
 		B5C2F1292DE16DE300866644 /* BMICaculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2F1282DE16DE300866644 /* BMICaculatorUITestsLaunchTests.swift */; };
+		B5C5D8952E35025900AF06F3 /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C5D8942E35025900AF06F3 /* extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		B5C2F1222DE16DE300866644 /* BMICaculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BMICaculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5C2F1262DE16DE300866644 /* BMICaculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMICaculatorUITests.swift; sourceTree = "<group>"; };
 		B5C2F1282DE16DE300866644 /* BMICaculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMICaculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B5C5D8942E35025900AF06F3 /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				B5C2F10E2DE16DE200866644 /* Assets.xcassets */,
 				B5C2F1102DE16DE200866644 /* LaunchScreen.storyboard */,
 				B5C2F1132DE16DE200866644 /* Info.plist */,
+				B5C5D8942E35025900AF06F3 /* extension.swift */,
 			);
 			path = BMICaculator;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				B5C2F10A2DE16DDE00866644 /* ViewController.swift in Sources */,
 				B5C2F1062DE16DDE00866644 /* AppDelegate.swift in Sources */,
 				B5C2F1082DE16DDE00866644 /* SceneDelegate.swift in Sources */,
+				B5C5D8952E35025900AF06F3 /* extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,24 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BMICaculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tEj-eX-2e8">
+                                <rect key="frame" x="90" y="783" width="59" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="計算"/>
+                                <connections>
+                                    <action selector="caculate:" destination="BYZ-38-t0r" eventType="touchDown" id="Zg4-Bq-j54"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BTd-Lv-u0t">
+                                <rect key="frame" x="244" y="783" width="59" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="重置"/>
+                                <connections>
+                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="touchDown" id="OPF-X6-TOu"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="身高（公分）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ZQ-gU-gPN">
+                                <rect key="frame" x="56" y="141" width="104" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="體重（公斤）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vhs-AT-IiZ">
+                                <rect key="frame" x="56" y="188" width="104" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xj1-a2-Mbi">
+                                <rect key="frame" x="168" y="134" width="151" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NOd-YK-U4W">
+                                <rect key="frame" x="168" y="181" width="151" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGray4Color"/>
+                        <constraints>
+                            <constraint firstItem="NOd-YK-U4W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="168" id="0Xb-8O-5S5"/>
+                            <constraint firstItem="BTd-Lv-u0t" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="724" id="0iR-pd-KB9"/>
+                            <constraint firstItem="NOd-YK-U4W" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="122" id="5Vi-Ye-GyS"/>
+                            <constraint firstItem="Vhs-AT-IiZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="129" id="9zG-1Z-BXN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vhs-AT-IiZ" secondAttribute="trailing" constant="233" id="EOi-hO-0ms"/>
+                            <constraint firstItem="xj1-a2-Mbi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="H1g-mX-3FZ"/>
+                            <constraint firstItem="Vhs-AT-IiZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="56" id="HlZ-68-4tF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xj1-a2-Mbi" secondAttribute="trailing" constant="74" id="I4f-xo-agq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NOd-YK-U4W" secondAttribute="trailing" constant="74" id="LiO-7Y-IQk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tEj-eX-2e8" secondAttribute="trailing" constant="244" id="LuU-xc-EGP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xj1-a2-Mbi" secondAttribute="bottom" constant="650" id="NWw-qA-veg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Vhs-AT-IiZ" secondAttribute="bottom" constant="609" id="Qdk-xj-9qc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BTd-Lv-u0t" secondAttribute="bottom" id="SiQ-B5-ro6"/>
+                            <constraint firstItem="BTd-Lv-u0t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="244" id="aDn-ag-cvk"/>
+                            <constraint firstItem="0ZQ-gU-gPN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="82" id="cEI-cd-X2d"/>
+                            <constraint firstItem="xj1-a2-Mbi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="168" id="dtv-VU-SZ3"/>
+                            <constraint firstItem="tEj-eX-2e8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="724" id="m08-fr-Qnw"/>
+                            <constraint firstItem="tEj-eX-2e8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="mdS-Oh-WrC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tEj-eX-2e8" secondAttribute="bottom" id="n3l-14-RcO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0ZQ-gU-gPN" secondAttribute="trailing" constant="233" id="vhQ-Eb-vgY"/>
+                            <constraint firstItem="0ZQ-gU-gPN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="56" id="wuz-iq-ME2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0ZQ-gU-gPN" secondAttribute="bottom" constant="656" id="yCm-xx-BFZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NOd-YK-U4W" secondAttribute="bottom" constant="603" id="z8a-kU-jat"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BTd-Lv-u0t" secondAttribute="trailing" constant="90" id="zmT-1g-0Gg"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="計算按鈕" destination="tEj-eX-2e8" id="fex-Kv-JkT"/>
+                        <outlet property="身高" destination="0ZQ-gU-gPN" id="gvM-6u-cwX"/>
+                        <outlet property="身高輸入" destination="xj1-a2-Mbi" id="sNb-fh-VG5"/>
+                        <outlet property="重置按鈕" destination="BTd-Lv-u0t" id="dyx-Qy-Vot"/>
+                        <outlet property="體重" destination="Vhs-AT-IiZ" id="exg-5x-wKZ"/>
+                        <outlet property="體重輸入" destination="NOd-YK-U4W" id="bBZ-dO-4Gx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.824427480916029" y="-27.464788732394368"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
