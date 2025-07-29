@@ -41,10 +41,26 @@ class ViewController: UIViewController {
         
         
         let BMI = bmi.rounding(toDecimal: 1)
+        
+        var illustration : String
+        
+        if(BMI < 18.5){
+            illustration = "體重過輕"
+        }else if(BMI < 24){
+            illustration = "體重正常"
+        }else if(BMI < 27){
+            illustration = "體重過重"
+        }else if(BMI < 30){
+            illustration = "輕度肥胖"
+        }else if(BMI < 35){
+            illustration = "中度肥胖"
+        }else{
+            illustration = "重度肥胖"
+        }
             
         let alert = UIAlertController(
             title: "計算結果",
-            message: "你的ＢＭＩ：\(BMI)",
+            message: "你的ＢＭＩ：\(BMI)，你屬於\(illustration)",
             preferredStyle: .actionSheet
         )
         alert.addAction(UIAlertAction(
